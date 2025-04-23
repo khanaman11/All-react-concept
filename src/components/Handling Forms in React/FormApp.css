@@ -1,0 +1,22 @@
+.form-cnt{
+    width: 300px;
+    padding: 30px;
+    background-color: #DDD;
+    border: 1px solid orange;
+    text-align: center;
+}
+.form-cnt input{
+    padding: 10px;
+    border: 1px solid orange;
+    background-color: #fff;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form-cnt button{
+    padding: 10px;
+    background-color: skyblue;
+    border: none;
+    border-radius:5px;
+}
