@@ -8,6 +8,7 @@ import EventConcept from './components/Interactive Message Changer/EventConcept'
 import CourseAccess from './components/Online Course Access/CourseAccess'
 import PropsConcept from './components/Reusable Welcome Card with Props/PropsConcept'
 import StudentsList from './components/Students list with object/StudentsList'
+import TodoApp from './components/To do App/TodoApp'
 
 function App() {
   
@@ -29,7 +30,9 @@ function App() {
 
       {/* <FruitApp/> */}
 
-      <StudentsList/>
+      {/* <StudentsList/> */}
+
+      <TodoApp/>
     </>
   )
 }
