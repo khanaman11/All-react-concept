@@ -1,39 +1,22 @@
+import React from 'react'
+import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import Navbar from './components/Navigation/Navbar'
+import Home from './components/Pages/Home'
+import About from './components/Pages/About'
+import Contact from './components/Pages/Contact'
+import Services from './components/Pages/Services'
 
-import './App.css'
-import CounterApp from './components/counterApp/CounterApp'
-import FruitApp from './components/Fruit List App/FruitApp'
-import FormApp from './components/Handling Forms in React/FormApp'
-import Hello_react from './components/hello react/Hello_react'
-import EventConcept from './components/Interactive Message Changer/EventConcept'
-import CourseAccess from './components/Online Course Access/CourseAccess'
-import PropsConcept from './components/Reusable Welcome Card with Props/PropsConcept'
-import StudentsList from './components/Students list with object/StudentsList'
-import TodoApp from './components/To do App/TodoApp'
-
-function App() {
-  
-
+const App = () => {
   return (
-    <>
-      {/* <Hello_react/> */}
-
-      {/* <PropsConcept name="Amanullah khan" massage="Welcome to the world of reusable components!"/> */}
-      {/* <PropsConcept name= "Nasir bhai" massage="Learning React is fun with components and props!"/> */}
-
-      {/* <CounterApp/> */}
-
-      {/* <EventConcept/> */}
-
-      {/* <FormApp/> */}
-
-      {/* <CourseAccess/> */}
-
-      {/* <FruitApp/> */}
-
-      {/* <StudentsList/> */}
-
-      <TodoApp/>
-    </>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/services' element={<Services/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
